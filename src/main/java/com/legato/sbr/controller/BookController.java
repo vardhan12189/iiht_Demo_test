@@ -24,7 +24,7 @@ public class BookController {
 
 	@Autowired
 	private BookRepository repo;
-
+System.out.println("Test line ");
 	@GetMapping
 	public ResponseEntity<List<Book>> getAll() {
 		return new ResponseEntity<List<Book>>(repo.findAll(), OK);
@@ -83,5 +83,6 @@ public class BookController {
 		return resp;
 
 	}
+	
 
 }
